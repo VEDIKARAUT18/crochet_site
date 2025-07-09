@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Crochet Creations</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <h1>Crochet Creations</h1>
+    <nav>
+      <a href="#products">Products</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Handmade Crochet Gifts</h2>
+    <p>Unique keychains, flowers, bouquets & covers made with love.</p>
+  </section>
+
+  <section id="products" class="products">
+    <h2>Our Products</h2>
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="https://via.placeholder.com/200" alt="Crochet Keychain" />
+        <h3>Keychain</h3>
+        <p>₹99 only</p>
+        <button onclick="addToCart('Keychain')">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="https://via.placeholder.com/200" alt="Crochet Flower" />
+        <h3>Flower</h3>
+        <p>₹149 only</p>
+        <button onclick="addToCart('Flower')">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="https://via.placeholder.com/200" alt="Crochet Bouquet" />
+        <h3>Bouquet</h3>
+        <p>₹299 only</p>
+        <button onclick="addToCart('Bouquet')">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="https://via.placeholder.com/200" alt="Crochet Cover" />
+        <h3>Phone Cover</h3>
+        <p>₹199 only</p>
+        <button onclick="addToCart('Cover')">Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <form onsubmit="submitForm(event)">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+  <section id="cart" class="cart">
+  <h2>Your Cart</h2>
+  <ul id="cartItems"></ul>
+  <p id="totalAmount">Total: ₹0</p>
+  <button onclick="checkout()">Checkout</button>
+</section>
+
+  <footer>
+    <p>© 2025 Crochet Creations. All rights reserved.</p>
+    <a href="https://wa.me/919699001091" target="_blank" class="whatsapp-btn">Chat on WhatsApp</a>
+
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
